@@ -13,7 +13,7 @@ typedef struct No{
 
 //Funcao que remove elemento em uma posicao da lista
 
-No * remover_elemento_na_posicao(No * lista, int posicao){
+No * remove_elemento(No * lista, int posicao){
 
   No * aux = lista;
   int cont = 1;
@@ -140,7 +140,7 @@ No * inserir_elemento_na_posicao(No * lista, No * novo, int posicao){
 
     //Removendo o elemento na posição 3
    printf("Removendo o elemento na posicao 3 \n");
-   lista = remover_elemento_na_posicao(lista,3);
+   lista = remove_elemento(lista,3);
    //Apresenta a lista com o elemento na posicao 3 removido
    apresenta_lista(lista);
 
@@ -148,7 +148,7 @@ No * inserir_elemento_na_posicao(No * lista, No * novo, int posicao){
 
    //Removendo o elemento na posição 1
    printf("Removendo o elemento na posicao 1 \n");
-   lista = remover_elemento_na_posicao(lista,1);
+   lista = remove_elemento(lista,1);
    //Apresenta a lista com o elemento na posicao 1 removido
    apresenta_lista(lista);
   
